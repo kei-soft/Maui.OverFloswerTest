@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.OverFloswerTest.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:over="clr-namespace:OverFlower;assembly=OverFlower">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            VerticalOptions="Center">
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="OverFlower Test"
+                VerticalOptions="Center" />
+            <Grid HeightRequest="400" WidthRequest="400">
+                <over:OverFlower
+                    x:Name="DemoOverFlower"
+                    ImageHeight="500"
+                    ImageSource="testimage.jpg"
+                    ImageWidth="500"
+                    Reverse="False"
+                    ScrollDirection="Left"
+                    ScrollDuration="4000" />
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
